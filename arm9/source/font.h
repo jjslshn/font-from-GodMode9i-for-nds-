@@ -33,6 +33,8 @@ static constexpr u16 palette[16][2] = {
 };
 
 void Font();
-void printf(int xPos, int yPos, Palette palette, const char *format, ...);
-void printop(int xPos, int yPos, Palette palette, const char *format, ...);
+void printf(Palette palette, const char *format, ...);
+void printop(Palette palette, const char *format, ...);
+	
+void clear(bool top);
 
